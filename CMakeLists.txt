@@ -53,5 +53,3 @@ cctz_target_set_cxx_standard(cctz)
 add_library(cctz::cctz ALIAS cctz)
 
 target_include_directories(cctz PUBLIC include)
-
-feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
