@@ -13,6 +13,8 @@ include(FeatureSummary)
 option(BUILD_TOOLS "Whether or not to build tools" ON)
 option(BUILD_EXAMPLES "Whether or not to build examples" ON)
 
+set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC" ) 
+
 
 # Starting from CMake >= 3.1, if a specific standard is required,
 # it can be set from the command line with:
