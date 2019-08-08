@@ -31,7 +31,9 @@ add_library(cctz
   )
 add_library(cctz::cctz ALIAS cctz)
 
+set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS} -fPIC" )
 #target_compile_options( cctz PRIVATE -fPIC ) 
+
 #target_link_options( cctz PRIVATE -flto -fuse-linker-plugin )
 
 # Starting from CMake >= 3.1, if a specific standard is required,
