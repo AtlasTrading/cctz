@@ -10,6 +10,8 @@ set(CMAKE_MODULE_PATH
 include(CTest)
 include(FeatureSummary)
 
+set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC" ) 
+
 add_library(cctz
   src/civil_time_detail.cc
   src/time_zone_fixed.cc
